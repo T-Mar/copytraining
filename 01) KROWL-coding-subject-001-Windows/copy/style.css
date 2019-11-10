@@ -1,0 +1,58 @@
+/*reset CSS*/
+
+
+/*body*/
+.body {
+    font-family: '游明朝','Yu Mincho';
+}
+
+.inner {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 80px;
+    background: #5A442A;
+
+}
+
+.nav__title_name {
+    color: #fff;
+}
+
+.nav__title_name h1 {
+    font-size: 32px;
+}
+
+.nav__title_name span {
+    font-size: 16px;
+}
+
+.mv {
+    background-image: url(../images/main_visual.jpg);
+    background-size: cover;
+}
+
+.main_headline {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main_headline_enphasis {
+    font-size: 32px;
+}
+
+.main_wrapper {
+    display: flex;
+}
+
+.main_wrapper_image {
+    flex-wrap: ;
+}
+
+.main_wrapper_text {
+    flex: ;
+    font-size: 16px;
+}
+
