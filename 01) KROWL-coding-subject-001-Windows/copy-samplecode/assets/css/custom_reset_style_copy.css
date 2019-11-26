@@ -1,22 +1,123 @@
-html {
-    font-size: 62.5%;
-}/*この定義する意図がわからない*/
+@charset "UTF-8";
+/*これもここで文字コードを設定？する理由がわからない*/
 
-body {
-    min-width: 1000px;
-    font-family: '游明朝体', YuMincho, '游明朝 Medium', 'Yu Mincho Medium', '游明朝', 'Yu Mincho', serif;
-    line-height: 1.75;
+/*ページ共通で使うインナー*/
+.common-inner {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*ページヘッダー*/
+.page-header {
+    background-color: #5A442A;
+}
+
+.page-header__inner {
+    padding: 24px 0 ;
+}
+
+.page-header__title {
+    color: #fff;
+    line-height: 1.0;
+}
+
+.page-header__title .large {
+    font-size: 3.2rem;
+}
+
+.page-header__title .small {
+    font-size: 2rem;
+}
+
+.page-header__main-visual img{
+    width: 100%;
+}/*imgまで指定しないと100%表示ならない*/
+
+/*メインコンテンツ*/
+.main-content {
+    padding: 50px 0;
+    background-color: #FAF5ED;
+}
+
+/*コンテンツのヘッダー*/
+.section-header {
+    margin-bottom: 30px;
+}
+
+.section-header__title {
+    line-height: 1;
+}
+
+/* 最初の一文字だけフォントサイズ等を変更する書き方はCSSのみでも可能
+.section-header__title:first-letter {
+    font-size: 3.6rem;
+}
+*/
+
+.section-header__title .large {
+    font-size: 3.6rem;
+}
+
+.section-header__title .small {
+    font-size: 2.4rem;
+}
+
+/*写真のリスト*/
+.work-list {
+    margin-bottom: 50px;
+}
+
+.work-list__item:not(:last-child) {
+    margin-bottom: 30px;
+}/*最後の子要素はmb30pxを外す*/
+
+/*写真+テキストのブロック*/
+.photo-work {
+    display: flex;
+}
+
+.photo-work__image {
+    width: 480px;
+    margin-right: 20px;
+}
+
+.photo-work__text {
+    font-size: 1.6rem;
+}
+
+/*過去作品へのテキストリンク*/
+.old-works {
+    line-height: 1.0;
+    text-align: center;
+}
+
+.old-works a {
     color: #707070;
+    text-decoration: none; /*:フォントサイズの違いによる下線部のずれを生じないよう一旦下線部を消去*/
+    border-bottom: 2px solid;/*border-bottomで下線を引く*/
 }
 
-strong, b, mark, b, .typo-bold {
-    font-family: '游明朝体', YuMincho, '游明朝', 'Yu Mincho', '游明朝', 'Yu Mincho', serif;
-}/*なぜ繰り返しているんだろう？*/
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+.old-works a:hover {
+    border-bottom: none;
 }
 
-img {
-    vertical-align: bottom;
+.old-works .large {
+    font-size: 3.6rem;
+}
+
+.old-works .small {
+    font-size: 2.4rem;
+}
+
+/*ページフッター*/
+.page-footer {
+    padding: 22px 0;
+    background-color: #5A4A2A;
+}
+
+.page-header p {
+    font-size: 1.6rem;
+    line-height: 1.0;
+    text-align: center;
+    color: #fff;
 }
