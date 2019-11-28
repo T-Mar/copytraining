@@ -1,0 +1,25 @@
+.common-inner {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.page-header__inner {
+    padding: 24px 0;
+    }
+
+    h1 {
+        color: #fff;
+        line-height: 1.0;
+
+        .large {
+            font-size: 3.2rem;
+        }
+        .small {
+            font-size: 2rem;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
