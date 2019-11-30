@@ -3,23 +3,23 @@
   margin: 0 auto;
 }
 
-.page-header {
-  background: #5A442A;
-}
-
-.page-header .inner {
+.page-header__inner {
   padding: 24px 0;
 }
 
-.page-header .title {
+.page-header__inner h1 {
   color: #fff;
   line-height: 1.0;
 }
 
-.page-header .title .large {
+.page-header__inner h1 .large {
   font-size: 3.2rem;
 }
 
-.page-header .title .small {
+.page-header__inner h1 .small {
   font-size: 2rem;
+}
+
+.page-header__inner img {
+  width: 100%;
 }
