@@ -23,3 +23,36 @@
 .page-header__inner img {
   width: 100%;
 }
+
+.old-works {
+  line-height: 1.0;
+  text-align: center;
+}
+
+.old-works a {
+  color: #707070;
+}
+
+.old-works a:hover {
+  border-bottom: none;
+}
+
+.old-works .large {
+  font-size: 3.6rem;
+}
+
+.old-works .small {
+  font-size: 2.4rem;
+}
+
+.page-footer {
+  padding: 22px 0;
+  background: #5A442A;
+}
+
+.page-footer p {
+  font-size: 1.6rem;
+  line-height: 1.0;
+  text-align: center;
+  color: #fff;
+}

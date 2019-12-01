@@ -121,3 +121,20 @@
     text-align: center;
     color: #fff;
 }
+
+@media screen and (max-width: 524px) { /*ウィンドウ幅が0～479pxの場合にcssを適用*/
+.common-inner {
+    margin: 0 auto;
+}
+
+    .photo-work {
+display: inline;
+}
+
+.photo-work__img {
+width: 100%;
+}
+
+.photo-work__text {
+    width: 100%;
+}
